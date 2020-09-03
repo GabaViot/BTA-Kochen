@@ -1,0 +1,33 @@
+body{
+
+background-color: rgba(0, 0, 255, 0.185);
+font-family: 'Avenir Next', Tahoma, Verdana, Geneva, sans-serif;
+}
+
+h1{ 
+    color: cadetblue;
+    font-family: Tahoma;
+}
+
+p {
+    color: darkgrey;
+    background-color: darkblue;
+}
+/* Selektor ID mit dem Namen nummer-1 
+ID in html wird zu einen #
+*/
+#nummer-1{
+    background-color: green
+}
+#nummer-2{
+    color: rebeccapurple
+}
+div{
+height: 100px;
+background: lightblue;
+margin: 10px;
+}
+
+.aqua{
+    background-color: antiquewhite;
+}

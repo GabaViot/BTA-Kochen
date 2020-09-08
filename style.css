@@ -1,33 +1,92 @@
-body{
-
-background-color: rgba(0, 0, 255, 0.185);
-font-family: 'Avenir Next', Tahoma, Verdana, Geneva, sans-serif;
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 1.5;
 }
 
-h1{ 
-    color: cadetblue;
-    font-family: Tahoma;
+a {
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-p {
-    color: darkgrey;
-    background-color: darkblue;
-}
-/* Selektor ID mit dem Namen nummer-1 
-ID in html wird zu einen #
-*/
-#nummer-1{
-    background-color: green
-}
-#nummer-2{
-    color: rebeccapurple
-}
-div{
-height: 100px;
-background: lightblue;
-margin: 10px;
+li {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 10px;
 }
 
-.aqua{
-    background-color: antiquewhite;
+li a:hover {
+  color: white;
+  background: steelblue;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding-left: 5%;
+  padding-right: 5%;
+  /*Kurschreibweise: padding: 0 5%; */
+}
+#burger {
+  border: none;
+  background: transparent;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+    display: block;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background: white;
+  }
+
+#hero {
+  background-image: url("img/intro.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+#hero h1 {
+  color: white;
+  text-align: center;
+}
+.button {
+  background-color: white;
+  color: teal;
+  border: 2px solid;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+@media (min-width: 960px) {
+  .hidden {
+    display: block;
+  }
+
+  #burger {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
 }

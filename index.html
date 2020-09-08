@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!--Das ist ein interne Kommentare in der Enwiklung-->
-        <meta charset="UTF-8">
-<title>BTA-Kochen - Leckere Rezepten</title>
-<meta name="description" content="Tolle Rezepte">
-<meta name="viewport" content="width=device-width, initial-scale_1.0"
-/>
-<link rel="stylesheet" href="style.css"/>
-    </head> 
-    <body>
-        <h1>Hier ist der Hauptitel</h1>
-        <img src="img/B4727_208187_0029.jpg" alt="Frisch im Summer" width="800" title="Sonne, Sonne im Summer!">
-        <p id="nummer-1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur possimus quam hic amet vel est vitae autem fugiat aliquam placeat, cumque odio temporibus alias voluptates numquam animi nam officia magni!
-        </p>
-        <br>
-        <p id="nummer-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur possimus quam hic amet vel est vitae autem fugiat aliquam placeat, cumque odio temporibus alias voluptates numquam animi nam officia magni!
-        </p>
+  <head>
+    <!--Das ist ein Kommentar-->
+    <meta charset="UTF-8" />
+    <title>BTA-Kochen - Rezpte: lecker schnell gesund</title>
+    <meta
+      name="description"
+      content="Tolle Rezepte zwischen Homeoffice und Freizeit - alles was schmeckt und der Seele guttut"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#">
+        <img
+          src="img/logo.png"
+          alt="Logo Kochen BTA-Kochmütze mit Brille"
+          height="40px"
+        />
+        <!--markus lässt px hinten dran weg, in html kann das weggelassen werden, aber in css müsste es ran-->
+      </a>
 
-        <div class="aqua"></div>
-        <div></div>
-        <div class="aqua"></div>
-    </body>
+      <button id="burger">
+        <img src="img/menu.svg" alt="zum Hauptmenü" height="40" />
+      </button>
+
+      <nav class="hidden">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Rezepte</a>
+          </li>
+          <li>
+            <a href="#">Kategorien</a>
+          </li>
+          <li>
+            <a href="#">Über uns</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Hier beginn die Hauptteil-->
+    <main>
+      <section id="hero">
+        <h1>Die beste Rezepte</h1>
+        <p>Italienische Küche</p>
+        <a href="#" class="button">viel zu entdecken!!</a>
+      </section>
+    </main>
+
+    <!--Hier endet der Hauptteil-->
+
+    <script src="js/menu.js"></script>
+  </body>
 </html>
-
